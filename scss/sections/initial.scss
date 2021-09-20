@@ -1,0 +1,58 @@
+.initial {
+  @include mobile {
+    text-align: center;
+  }
+  .initial-page-parts {
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .readable-part {
+      width: 545px;
+      padding: 125px 17px 175px 0;
+      float: left;
+      @include mobile {
+        padding: 0 0 47px;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 133.69%;
+        color: $clr-blue-1;
+        margin: 0;
+        em {
+          font-style: normal;
+          color: $clr-red;
+        }
+        @include mobile {
+          font-size: 34px;
+          width: 373px;
+          margin: 0 19px;
+        }
+      }
+      p {
+        padding: 24px 0;
+        margin: 0;
+        font-size: 20px;
+        line-height: 29px;
+        color: $clr-blue-2;
+        @include mobile {
+          width: 383px;
+          padding: 16px 0;
+          margin: 0 14px;
+        }
+      }
+    }
+    .device-part-1 {
+      padding: 110px 0 160px;
+      @include mobile {
+        padding: 54px 0 32px;
+      }
+      img {
+        @include mobile {
+          width: 349px;
+        }
+      }
+    }
+  }
+}

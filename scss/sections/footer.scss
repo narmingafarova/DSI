@@ -1,0 +1,14 @@
+footer {
+  text-align: center;
+  background-color: $clr-red;
+  p {
+    font-size: 18px;
+    line-height: 21px;
+    color: $clr-white;
+    padding: 22px 0 21px;
+    margin: 0;
+    @include mobile {
+      padding: 22px 14px 21px 15px;
+    }
+  }
+}

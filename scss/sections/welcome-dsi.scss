@@ -1,0 +1,59 @@
+.welcome-dsi {
+  height: 500px;
+  background-color: $clr-grey;
+  @include mobile {
+    text-align: center;
+    height: 857px;
+  }
+  .device-part-2 {
+    float: left;
+    width: 450px;
+    margin-right: 82px;
+    @include mobile {
+      width: 411px;
+    }
+    img {
+      @include mobile {
+        width: 349px;
+      }
+    }
+  }
+  .welcome-text-part {
+    float: left;
+    width: 520px;
+    h2 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 133.69%;
+      color: $clr-blue-1;
+      padding: 57px 0 24px;
+      margin: 0;
+      span {
+        color: $clr-red;
+      }
+      @include mobile {
+        font-weight: normal;
+        width: 364px;
+        margin: 35px 22px 0 25px;
+        padding: 0;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 150%;
+      color: $clr-blue-2;
+      margin: 0;
+      &.welcome-first-text {
+        padding-bottom: 20px;
+        @include mobile {
+          padding: 0;
+        }
+      }
+      @include mobile {
+        width: 359px;
+        text-align: left;
+        margin: 24px 27px 29px 25px;
+      }
+    }
+  }
+}

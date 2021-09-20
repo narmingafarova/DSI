@@ -1,0 +1,115 @@
+.about-bar {
+  padding: 28px 0 24px;
+  @include mobile {
+    padding: 20px 0 32px;
+  }
+  .connection {
+    display: flex;
+    @include mobile {
+      display: block;
+      padding: 0 0 0 25px;
+    }
+    p {
+      margin: 0;
+    }
+    .logo-address {
+      display: grid;
+      width: 317px;
+      color: $clr-blue-3;
+      margin-right: 47px;
+      strong {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 10px 0 8px;
+        @include mobile {
+          padding: 4px 0 12px;
+        }
+      }
+      p {
+        width: 317px;
+        font-weight: 300;
+        line-height: 149.19%;
+      }
+    }
+    .contact {
+      padding-top: 23px;
+      strong {
+        font-size: 24px;
+        line-height: 28px;
+        color: $clr-blue-3;
+        & + p {
+          padding-top: 15px;
+        }
+        @include mobile {
+          padding: 32px 0 12px;
+        }
+      }
+      p {
+        width: 269px;
+        font-weight: 300;
+        line-height: 149.19%;
+        color: $clr-blue-3;
+        &:last-child {
+          @include mobile {
+            padding-bottom: 32px;
+          }
+        }
+      }
+    }
+    .brands {
+      padding-top: 47px;
+      padding-left: 64px;
+      img {
+        &:not(:last-child) {
+          padding-right: 25.21px;
+        }
+        @include mobile {
+          &.silverlight,
+          &.framework,
+          &.ios,
+          &.android {
+            margin-right: 21px;
+          }
+          &.silverlight,
+          &.framework,
+          &.java {
+            margin-bottom: 14px;
+          }
+          &.silverlight {
+            width: 113.35px;
+            height: 34.92px;
+            padding: 0;
+          }
+          &.framework {
+            width: 98.03px;
+            height: 41.66px;
+            padding: 0;
+          }
+          &.java {
+            width: 66.17px;
+            height: 36.76px;
+            padding: 0;
+          }
+          &.ios {
+            width: 66.78px;
+            height: 37.37px;
+            padding: 0;
+          }
+          &.android {
+            width: 122.54px;
+            height: 18.81px;
+            padding: 0;
+          }
+          &.blackberry {
+            width: 122.54px;
+            height: 21.5px;
+            padding: 0;
+          }
+        }
+      }
+      @include mobile {
+        padding: 0;
+      }
+    }
+  }
+}

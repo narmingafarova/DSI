@@ -1,0 +1,35 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/grid";
+
+@import "../scss/helpers/var.scss";
+@import "../scss/helpers/mixin.scss";
+
+@import "../scss/sections/button.scss";
+@import "../scss/sections/header-nav.scss";
+@import "../scss/sections/initial.scss";
+@import "../scss/sections/welcome-dsi.scss";
+@import "../scss/sections/product-service.scss";
+@import "../scss/sections/about-bar.scss";
+@import "../scss/sections/footer.scss";
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+// body {
+//   @include mobile {
+//     max-width: unset;
+//   }
+// }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1125px;
+}

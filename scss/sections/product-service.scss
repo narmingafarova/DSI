@@ -1,0 +1,56 @@
+.product-service {
+  text-align: center;
+  padding: 116px 0 110px;
+  @include mobile {
+    padding: 36px 0 0;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 133.69%;
+    color: $clr-blue-1;
+    @include mobile {
+      padding-bottom: 16px;
+      margin: 0;
+    }
+  }
+  .product-service-items {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      display: block;
+    }
+    .product-service-item {
+      text-align: left;
+      padding: 25px 20px 4px 24px;
+      width: 363px;
+      @include mobile {
+        text-align: center;
+        margin: 0 26px;
+        padding: 0;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 133.69%;
+        color: $clr-red;
+        padding-top: 16px;
+        margin: 0;
+        @include mobile {
+          padding: 15px 0;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 150%;
+        color: $clr-blue-2;
+        padding: 15px 0;
+        margin: 0;
+        @include mobile {
+          width: 359px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

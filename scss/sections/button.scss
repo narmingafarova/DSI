@@ -1,0 +1,52 @@
+nav {
+  .nav-toggle {
+    display: none;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    cursor: pointer;
+    @include mobile {
+      display: flex;
+    }
+  }
+}
+
+.read-more-btn {
+  background: $clr-red;
+  border-radius: 4px;
+  color: $clr-white;
+  border: 0;
+}
+
+.initial {
+  .button {
+    position: relative;
+    height: 53px;
+    width: 411px;
+    .red-read-btn {
+      font-size: 20px;
+      line-height: 29px;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+      padding: 12px 32px;
+      @include mobile {
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+.product-service {
+  .product-button {
+    font-size: 18px;
+    line-height: 144.69%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    padding: 8px 16px;
+    @include mobile {
+      margin: 16px 0 32px;
+    }
+  }
+}
